@@ -1,0 +1,44 @@
+﻿@model SistemaWebEmpleado.Models.Empleado
+@{
+    ViewData["Title"] = "Detalle";
+}
+
+<h1>Detalle</h1>
+
+<fieldset>
+        <legend>Detalle Empleado</legend>
+    <div>
+        @Html.DisplayNameFor(model => model.Nombre)
+    </div>
+    <div>
+        @Html.DisplayFor(model => model.Nombre)
+    </div>
+    <div>
+        @Html.DisplayNameFor(model => model.Apellido)
+    </div>
+    <div>
+        @Html.DisplayFor(model => model.Apellido)
+    </div>
+    <div>
+        @Html.DisplayNameFor(model => model.Dni)
+    </div>
+    <div>
+        @Html.DisplayFor(model => model.Dni)
+    </div>
+     <div>
+        @Html.DisplayNameFor(model => model.Legajo)
+    </div>
+    <div>
+        @Html.DisplayFor(model => model.Legajo)
+    </div>
+    <div>
+        @Html.DisplayNameFor(model => model.Titulo)
+    </div>
+    <div>
+        @Html.DisplayFor(model => model.Titulo)
+    </div>
+
+    </fieldset>
+    <p>
+    @Html.ActionLink("Ir a index", "Index", "Empleado")
+    </p>

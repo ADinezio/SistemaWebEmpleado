@@ -1,0 +1,59 @@
+﻿@model IEnumerable<SistemaWebEmpleado.Models.Empleado>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="nuevoEmpleado"><a asp-action="Create" asp-controller="Empleado">Nuevo Empleado</a></div>
+
+<table  class="bordeNegro">
+    <thead >
+        <tr class ="bordeNegro">
+            <th class="bordeNegro">
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th class="bordeNegro">
+                @Html.DisplayNameFor(model => model.Apellido)
+            </th>
+            <th class="bordeNegro">
+                @Html.DisplayNameFor(model => model.Dni)
+            </th>
+            <th class="bordeNegro">
+                @Html.DisplayNameFor(model => model.Legajo)
+            </th>
+            <th class="bordeNegro">
+                @Html.DisplayNameFor(model => model.Titulo )
+            </th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr class="bordeNegro">
+                <td class="bordeNegro">
+                    @Html.DisplayFor(modelItem => item.Nombre)
+                </td>
+                <td class="bordeNegro">
+                    @Html.DisplayFor(modelItem => item.Apellido)
+                </td>
+                <td class="bordeNegro">
+                    @Html.DisplayFor(modelItem => item.Dni)
+                </td>
+                <td class="bordeNegro">
+                    @Html.DisplayFor(modelItem => item.Legajo )
+                </td>
+                <td class="bordeNegro">
+                    <a asp-action="EmpleadoXTitulo" asp-controller="Empleado" asp-route-titulo="@item.Titulo" method="get">@Html.DisplayFor(modelItem => item.Titulo)</a>
+                </td>
+                <td class="bordeNegro">@Html.ActionLink("Editar","Edit", new{id = item.EmpleadoId})</td>
+                <td class="bordeNegro">@Html.ActionLink("Detalle","Details", new{id = item.EmpleadoId})</td>
+                <td class="bordeNegro">@Html.ActionLink("Eliminar","Delete", new{id = item.EmpleadoId})</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+

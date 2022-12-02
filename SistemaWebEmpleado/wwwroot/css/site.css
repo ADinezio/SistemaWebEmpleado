@@ -1,0 +1,109 @@
+﻿html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    
+    font-size: 16px;
+}
+
+.header {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    text-align: right;
+    padding: 20px;
+    color: white;
+    font-weight: bolder;
+    font-size: 25px
+}
+
+.sideBar{
+    height:60px;
+    padding:20px;
+}
+
+.nav{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(62,136,56,1) 35%, rgba(0,212,255,1) 100%);
+    padding: 30px;
+    text-align:right;
+}
+
+a{
+    color:white;
+    margin:10px;
+}
+
+.main{
+    
+    height:600px;
+    padding:20px;
+    text-align:center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.footer {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+table a{
+    color:black;
+}
+
+table{
+    margin:0 auto;
+    text-align:center;
+}
+
+.bordeNegro{
+    border:2px solid black;
+}
+
+
+th,td{
+    padding:10px;
+}
+
+td a{
+    text-decoration:none;
+}
+
+.nuevoEmpleado a{
+    color: black;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.nuevoEmpleado{
+    margin-bottom:70px;
+}
+
+
+h1{
+    margin:20px
+}
+
+input{
+    margin-bottom:20px
+}
+
+.modificar{
+    text-align:center;
+    padding:10px 20px;
+    background-color: lightblue;
+    color:black;
+}
+
